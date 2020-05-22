@@ -1,7 +1,7 @@
 var netbus = require("../../netbus/netbus.js");
 var proto_tools = require("../../netbus/proto_tools.js");
 var proto_man = require("../../netbus/proto_man.js");
-var log = require("../../utils/proto_man.js");
+var log = require("../../utils/log.js");
 var Cmd = require("../Cmd.js");
 
 var service = {

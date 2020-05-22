@@ -8,8 +8,17 @@ var game_config = {
 
 	center_server: {
 		host: "127.0.0.1",
-		ports: 6086,
+		port: 6086,
 		stypes: [Stype.Auth],
+	},
+
+	center_database: {
+		host: "127.0.0.1",
+		port: 3306,
+		db_name: "lovejump_server",
+
+		uname: "root",
+		upwd: "123456",
 	},
 
 	game_server: {

@@ -12,3 +12,8 @@ var center = game_config.center_server;
 netbus.start_tcp_server(center.host, center.port, false);
 
 service_manager.register_service(Stype.Auth, auth_service);
+
+//连接中心数据库
+var mysql_center = require("../../database/mysql_center.js");
+mysql_center.connect();
+//end

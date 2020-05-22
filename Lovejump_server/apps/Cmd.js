@@ -3,7 +3,7 @@ var Cmd = {
 	USER_Disconnect: 10000,	
 	
 	Auth: {
-		
+		GUEST_LOGIN: 1,		//游客登陆
 	},
 };
 
