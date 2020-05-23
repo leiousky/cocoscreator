@@ -94,13 +94,13 @@ function session_send_encoded_cmd(cmd){
 	}
 
 	
-	if(!session.is_ws){
-		var data = tcppkg.package(cmd);
-		session.write(data);
+	if(!this.is_ws){
+		var data = tcppkg.package_data(cmd);
+		this.write(data);
 		return;
 	}
 	else{
-		session.send(cmd);
+		this.send(cmd);
 	}
 }
 
