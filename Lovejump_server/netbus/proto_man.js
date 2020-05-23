@@ -120,6 +120,8 @@ function decode_cmd_header(cmd_buf){
 //参数2：接收到的数据命令
 //返回：{0：stype, 1:ctype, 2:body}
 function decode_cmd(proto_type, stype, ctype, cmd_buf){
+	log.info(cmd_buf);
+
 	// cmd_buf = decrypt_cmd(cmd_buf);		//解密
 	if(cmd_buf.length < proto_tools.header_size){
 		return null;
