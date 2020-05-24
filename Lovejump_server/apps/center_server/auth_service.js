@@ -1,4 +1,5 @@
 var log = require("../../utils/log.js");
+<<<<<<< HEAD
 var Cmd = require("../Cmd.js");
 var auth_model = require("./auth_model.js");
 var Stype = require("../Stype.js");
@@ -17,6 +18,8 @@ function guest_login(session, utag, proto_type, body){
 		session.send_cmd(Stype.Auth, Cmd.Auth.GUEST_LOGIN, ret, utag, proto_type);
 	});
 }
+=======
+>>>>>>> bb5f3db2a6a9f4d601fdc2031aeb72cee7ba89aa
 
 var service = {
 	name: "auth_service", // 服务名称
@@ -25,11 +28,14 @@ var service = {
 	// 收到连接的客户端发给我们的数据
 	on_recv_player_cmd: function(session, stype, ctype, body, utag, proto_type, raw_cmd) {
 		log.info("on_recv_player_cmd: ", stype, ctype, body);
+<<<<<<< HEAD
 		switch(ctype){
 			case Cmd.Auth.GUEST_LOGIN:
 				guest_login(session, utag, proto_type, body);
 			break;
 		}
+=======
+>>>>>>> bb5f3db2a6a9f4d601fdc2031aeb72cee7ba89aa
 	},
 
 	// 收到连接的服务器发给我们的数据
